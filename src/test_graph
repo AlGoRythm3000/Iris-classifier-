@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.datasets import load_iris
+
+# Charger les données
+iris = load_iris()
+data = iris.data
+
+# Créer un plot simple
+plt.figure(figsize=(10, 6))
+plt.scatter(data[:, 0], data[:, 1], c=iris.target)
+plt.xlabel(iris.feature_names[0])
+plt.ylabel(iris.feature_names[1])
+plt.title('Iris Dataset - Première vs Deuxième caractéristique')
+
+# Afficher le plot
+plt.show()

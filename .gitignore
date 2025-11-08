@@ -1,0 +1,7 @@
+cd flower_classifier
+echo "env_iris/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.vscode/" > .gitignore
